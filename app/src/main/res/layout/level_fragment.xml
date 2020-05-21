@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_user"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#e7595d"
+        android:drawableLeft="@drawable/fish"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="30dp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="User" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_beginer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_bear"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="30dp"
+        android:text="Beginner"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_intermediate"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#88a6db"
+        android:drawableLeft="@drawable/ic_horse"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="30dp"
+        android:text="@string/intermediate"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_advanced"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#cc8d66"
+        android:drawableLeft="@drawable/ic_hippo"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="30dp"
+        android:text="@string/advanced"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

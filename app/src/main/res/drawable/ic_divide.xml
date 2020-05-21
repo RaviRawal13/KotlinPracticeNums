@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:fillColor="@android:color/holo_green_light"
+        android:pathData="M490.667,234.667L21.333,234.667C9.551,234.667 0,244.218 0,256c0,11.782 9.551,21.333 21.333,21.333h469.333c11.782,0 21.333,-9.551 21.333,-21.333C512,244.218 502.449,234.667 490.667,234.667z" />
+    <path
+        android:fillColor="@android:color/holo_green_light"
+        android:pathData="M256,192c47.131,0 85.333,-38.202 85.333,-85.333S303.131,21.333 256,21.333s-85.333,38.202 -85.333,85.333S208.869,192 256,192zM256,64c23.567,0 42.667,19.099 42.667,42.667S279.567,149.333 256,149.333s-42.667,-19.099 -42.667,-42.667S232.433,64 256,64z" />
+    <path
+        android:fillColor="@android:color/holo_green_light"
+        android:pathData="M256,320c-47.131,0 -85.333,38.202 -85.333,85.333s38.202,85.333 85.333,85.333s85.333,-38.202 85.333,-85.333S303.131,320 256,320zM256,448c-23.567,0 -42.667,-19.099 -42.667,-42.667s19.099,-42.667 42.667,-42.667s42.667,19.099 42.667,42.667S279.567,448 256,448z" />
+</vector>

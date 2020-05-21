@@ -1,0 +1,83 @@
+[
+  {
+    "question_type": 0,
+    "name": "Addition",
+    "pdf_link": "https://drive.google.com/open?id=1ND0cqXgmYJh9-HItnIUeuo5_Rm5VeUEi",
+    "pdf_title": "Addition_Subtraction.pdf",
+    "video_id": "x7f6vwd",
+    "svg_icon": "R.drawable.ic_add",
+    "bg_color": "#f0eb79"
+  },
+  {
+    "question_type": 1,
+    "name": "Subtraction",
+    "pdf_link": "https://drive.google.com/open?id=1ND0cqXgmYJh9-HItnIUeuo5_Rm5VeUEi",
+    "pdf_title": "Addition_Subtraction.pdf",
+    "video_id": "x7f6vwd",
+    "svg_icon": "R.drawable.ic_subtract",
+    "bg_color": "#524d47"
+  },
+  {
+    "question_type": 2,
+    "name": "Multiplication",
+    "pdf_link": "https://drive.google.com/open?id=19PoGdFUyZZcaB-GtGadHO3PhmVlaKbOv",
+    "pdf_title": "Multiplicationby11.pdf",
+    "video_id": "x5tn7vp",
+    "svg_icon": "R.drawable.ic_multiply",
+    "bg_color": "#80e7a9"
+  },
+  {
+    "question_type": 3,
+    "name": "Division",
+    "pdf_link": "https://drive.google.com/open?id=1yytxj2cIhA3pbFtNHyU86UAqoBjcHZYK",
+    "pdf_title": "PositiveIntegralDivisors.pdf",
+    "video_id": "x7f6svx",
+    "svg_icon": "R.drawable.ic_divide",
+    "bg_color": "#88a6db"
+  },
+  {
+    "question_type": 4,
+    "name": "Multiplication by 11",
+    "pdf_link": "https://drive.google.com/open?id=19PoGdFUyZZcaB-GtGadHO3PhmVlaKbOv",
+    "pdf_title": "Multiplicationby11.pdf",
+    "video_id": "x5tn7vp",
+    "svg_icon": "R.drawable.ic_eleven",
+    "bg_color": "#A427DD"
+  },
+  {
+    "question_type": 5,
+    "name": "Multiplication by 25",
+    "pdf_link": "https://drive.google.com/open?id=1QXIt_zpSTW-_l2oYRLQQCKgIZdfIY8TS",
+    "pdf_title": "Multiplicationby25.pdf",
+    "video_id": "x5tn7vp",
+    "svg_icon": "R.drawable.ic_twenty_five",
+    "bg_color": "#fbde4a"
+  },
+  {
+    "question_type": 6,
+    "name": "Multiplication by 75",
+    "pdf_link": "https://drive.google.com/open?id=1QXIt_zpSTW-_l2oYRLQQCKgIZdfIY8TS",
+    "pdf_title": "Multiplicationby75.pdf",
+    "video_id": "x5tn7vp",
+    "svg_icon": "R.drawable.ic_bear",
+    "bg_color": "#ffd700"
+  },
+  {
+    "question_type": 7,
+    "name": "LOIF",
+    "pdf_link": "https://drive.google.com/open?id=19Q8RlfIbBbLenG2iMZCqof5QlwZ_v760",
+    "pdf_title": "LOIF.pdf",
+    "video_id": "x5tn7vp",
+    "svg_icon": "R.drawable.ic_horse",
+    "bg_color": "#afe31b"
+  },
+  {
+    "question_type": 8,
+    "name": "Random",
+    "pdf_link": "https://drive.google.com/open?id=1ebAFxfEN3uD8_x1CaUmrRsR8etsAxibH",
+    "pdf_title": "Random.pdf",
+    "video_id": "x7f6svx",
+    "svg_icon": "R.drawable.ic_hippo",
+    "bg_color": "#e7595d"
+  }
+]

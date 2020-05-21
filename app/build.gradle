@@ -14,6 +14,15 @@ android {
         versionName "1.0"
     }
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -21,6 +30,9 @@ android {
         }
     }
 
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -33,4 +45,19 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.google.firebase:firebase-analytics:17.4.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.3.1'
+    implementation 'com.google.firebase:firebase-common-ktx:19.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1'
+    implementation 'androidx.fragment:fragment-ktx:1.2.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+    implementation 'com.google.firebase:firebase-storage-ktx:19.1.1'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    implementation 'com.dailymotion.dailymotion-sdk-android:sdk:0.2.2'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+
 }
