@@ -81,14 +81,14 @@ class QuizFragment : BaseFragment() {
                 val message = if (selectedButton.text == correctAnswer) {
                     val count = preferences?.getInt(prefPair.first, 0) ?: 0
                     val newCount = count + 1
-                    preferences?.edit()?.putInt(prefPair.first, newCount)?.commit()
+                    preferences?.edit()?.putInt(prefPair.first, newCount)?.apply()
                     "Correct!"
                 } else {
                     "Incorrect."
                 }
                 val tCount = preferences?.getInt(prefPair.second, 0) ?: 0
                 val newTCount = tCount + 1
-                preferences?.edit()?.putInt(prefPair.second, newTCount)?.commit()
+                preferences?.edit()?.putInt(prefPair.second, newTCount)?.apply()
                 generateNewQuestion()
                 message
 
