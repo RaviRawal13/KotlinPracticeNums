@@ -8,14 +8,14 @@
     <fragment
         android:id="@+id/login_fragment"
         android:name="com.foobles.kotlinnum.login.ui.LoginFragment"
-        android:label="login_fragment"
+        android:label="login"
         tools:layout="@layout/login_fragment">
 
         <action
             android:id="@+id/action_login_fragment_to_levelFragment"
             app:destination="@id/nav_home"
             app:launchSingleTop="true"
-            app:popUpTo="@+id/nav_home"
+            app:popUpTo="@id/mobile_navigation"
             app:popUpToInclusive="true"/>
     </fragment>
 
