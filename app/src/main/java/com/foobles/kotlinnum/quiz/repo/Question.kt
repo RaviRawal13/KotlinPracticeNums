@@ -64,7 +64,11 @@ class Question(val questionType: Int = QUESTION_TYPE_SUM) {
         val high = correctAnswer + Integer.min(leftAddend, rightAddend) / 2
         // Generate the incorrect answers.
         do {
-            answersSet.add(random.nextInt(abs(high - low)) + low)
+            var bound = abs(high - low)
+            if (bound < 0) {
+                bound = 0
+            }
+            answersSet.add(random.nextInt(bound) + low)
         } while (answersSet.size < 3)
 
         // Randomly permute the list of possible answers.
