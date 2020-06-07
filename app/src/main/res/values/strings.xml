@@ -17,7 +17,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_level">Level</string>
     <string name="menu_study">Study</string>
     <string name="advanced">Advanced</string>
     <string name="intermediate">Intermediate</string>
@@ -33,9 +33,24 @@
 
     <string name="random">Random</string>
     <string name="profile">Profile</string>
-    <string name="storage">Storage</string>
     <string name="correct">Correct</string>
     <string name="total">Total</string>
     <string name="hub">Hub</string>
+
+    <string name="time_to_study">Time to study.</string>
+
+
+    <string name="practice_notification_channel_id" translatable="false">practice_channel</string>
+    <string name="practice_notification_channel_name" translatable="true">Practice</string>
+    <string name="enable_reminder_notification">Enable reminder notification</string>
+    <string name="practice_reminder_notification_channel_description">Practice reminder</string>
+    <string name="we_will_remind_you_at_1pm_daily_for_the_practicce">We will remind you at 1pm daily for the practicce.</string>
+    <string name="notification">Notification</string>
+    <string name="hi_welcome_user">Hi Welcome, User</string>
+    <string name="beginner">Beginner</string>
+    <string name="description">Description</string>
+    <string name="storage">Storage</string>
+    <string name="pdf">PDF</string>
+    <string name="loif">LOIF</string>
 
 </resources>

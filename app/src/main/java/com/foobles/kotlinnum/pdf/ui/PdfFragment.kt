@@ -13,9 +13,8 @@ import com.foobles.kotlinnum.entity.StudyEntity
 import com.foobles.kotlinnum.utils.ARG_STUDY_ENTITY
 
 
-class PdfFragment : BaseFragment() {
-    private lateinit var binding: PdfViewFragmentBinding
-    var studyEntity: StudyEntity? = null
+class PdfFragment : BaseFragment<PdfViewFragmentBinding>() {
+    private var studyEntity: StudyEntity? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

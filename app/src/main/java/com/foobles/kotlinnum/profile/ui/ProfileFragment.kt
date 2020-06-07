@@ -1,4 +1,4 @@
-package com.foobles.kotlinnum.profile
+package com.foobles.kotlinnum.profile.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,12 +8,10 @@ import androidx.fragment.app.activityViewModels
 import com.foobles.kotlinnum.BaseFragment
 import com.foobles.kotlinnum.databinding.ProfileFragmentBinding
 import com.foobles.kotlinnum.login.vm.LoginViewModel
-import com.foobles.kotlinnum.quiz.repo.*
 import com.foobles.kotlinnum.utils.*
 
-class ProfileFragment : BaseFragment() {
+class ProfileFragment : BaseFragment<ProfileFragmentBinding>() {
 
-    private lateinit var binding: ProfileFragmentBinding
     private val loginViewModel by activityViewModels<LoginViewModel>()
 
     override fun onCreateView(

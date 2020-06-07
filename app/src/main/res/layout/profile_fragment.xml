@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7.5dp"
         android:layout_marginTop="50dp"
-        android:text="Hi Welcome, User"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:text="@string/hi_welcome_user"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16"
         android:textStyle="bold" />
 
     <ScrollView
@@ -66,7 +66,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/addition"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_a"
@@ -75,7 +75,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_a"
@@ -85,7 +85,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -121,7 +121,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/subtraction"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_s"
@@ -131,7 +131,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_s"
@@ -141,7 +141,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -186,7 +186,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/multiplication"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_m"
@@ -196,7 +196,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_m"
@@ -207,7 +207,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -243,7 +243,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/division"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_d"
@@ -253,7 +253,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_d"
@@ -263,7 +263,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -309,7 +309,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/multiplication_by_11"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_m11"
@@ -319,7 +319,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_m11"
@@ -330,7 +330,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -366,7 +366,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/multiplication_by_25"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_m25"
@@ -376,18 +376,17 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_m25"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -434,7 +433,7 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/multiplication_by_75"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_m75"
@@ -444,7 +443,7 @@
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_m75"
@@ -454,7 +453,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -491,19 +490,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="LOIF"
+                            android:text="@string/loif"
                             android:textColor="@color/white"
-                            android:textSize="20sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_c_l"
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:text="@string/correct"
                             android:textColor="@color/bright_green"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
 
                         <TextView
                             android:id="@+id/tv_t_l"
@@ -513,7 +511,7 @@
                             android:layout_marginBottom="7.5dp"
                             android:text="@string/total"
                             android:textColor="@color/purple"
-                            android:textSize="18sp" />
+                            android:textSize="@dimen/textsize_16" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

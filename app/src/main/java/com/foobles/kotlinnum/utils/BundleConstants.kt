@@ -6,6 +6,7 @@ const val ARG_STUDY_ENTITY  = "studyEntity"
 
 const val ARG_LEVEL  = "level"
 
+const val ARG_ENABLE_NOTIFICATION  = "enable_notification"
 
 const val CORRECT_SUM= "correctSum"
 const val TOTAL_SUM= "totalSum"

@@ -17,11 +17,12 @@ import com.foobles.kotlinnum.R
 import com.foobles.kotlinnum.databinding.LoginFragmentBinding
 import com.foobles.kotlinnum.login.vm.LoginViewModel
 import com.foobles.kotlinnum.nav.NavigationActivity
+import com.google.firebase.auth.FirebaseUser
 
-class LoginFragment : BaseFragment() {
+class LoginFragment : BaseFragment<LoginFragmentBinding>() {
 
     private val loginViewModel by activityViewModels<LoginViewModel>()
-    private lateinit var binding: LoginFragmentBinding
+    val currentUser: FirebaseUser? by lazy { loginViewModel.getCurrentUser() }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,7 +31,6 @@ class LoginFragment : BaseFragment() {
         binding = LoginFragmentBinding.inflate(layoutInflater, container, false)
         hideToolbar()
         setProgressBar(binding.loadingProgressBar)
-        val currentUser = loginViewModel.getCurrentUser()
 
         object : CountDownTimer(3000, 1000) {
             override fun onFinish() {
@@ -100,7 +100,12 @@ class LoginFragment : BaseFragment() {
             override fun onAnimationRepeat(p0: Animator?) {}
 
             override fun onAnimationEnd(p0: Animator?) {
-                binding.afterAnimationView.visibility = VISIBLE
+                if (currentUser != null) {
+                    (activity as? NavigationActivity)?.findNavController(R.id.nav_host_fragment)
+                        ?.navigate(R.id.action_login_fragment_to_levelFragment)
+                } else {
+                    binding.afterAnimationView.visibility = VISIBLE
+                }
             }
 
             override fun onAnimationCancel(p0: Animator?) {}

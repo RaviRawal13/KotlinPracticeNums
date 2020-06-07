@@ -10,9 +10,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/margin_2"
-        android:layout_marginBottom="@dimen/margin_2">
+        android:paddingBottom="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/trivia_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_8"
+            android:textSize="@dimen/textsize_16" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,51 +29,51 @@
             <Button
                 android:id="@+id/button_add"
                 android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:layout_margin="2dp"
+                android:layout_height="@dimen/height_200"
+                android:layout_margin="@dimen/margin_2"
                 android:layout_weight="1"
                 android:backgroundTint="@color/yellow"
                 android:drawableTop="@drawable/ic_add"
                 android:foreground="?attr/selectableItemBackground"
-                android:paddingTop="25dp"
+                android:paddingTop="@dimen/padding_25"
                 android:text="@string/addition"
                 android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
 
 
             <Button
                 android:id="@+id/button_sub"
                 android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:layout_margin="2dp"
+                android:layout_height="@dimen/height_200"
+                android:layout_margin="@dimen/margin_2"
                 android:layout_weight="1"
                 android:backgroundTint="@color/dark_grey"
                 android:drawableTop="@drawable/ic_subtract"
                 android:foreground="?attr/selectableItemBackground"
-                android:paddingTop="25dp"
+                android:paddingTop="@dimen/padding_25"
                 android:text="@string/subtraction"
                 android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_random"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_margin="2dp"
+            android:layout_margin="@dimen/margin_2"
             android:layout_weight="1"
             android:backgroundTint="@color/red_light"
             android:drawableLeft="@drawable/ic_bear"
             android:foreground="?attr/selectableItemBackground"
-            android:minHeight="200dp"
-            android:paddingStart="45dp"
-            android:paddingEnd="45dp"
+            android:minHeight="@dimen/height_200"
+            android:paddingStart="@dimen/padding_45"
+            android:paddingEnd="@dimen/padding_45"
             android:text="@string/random"
             android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,22 +92,22 @@
                 android:paddingTop="25dp"
                 android:text="@string/multiplication"
                 android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
 
             <Button
                 android:id="@+id/button_div"
                 android:layout_width="0dp"
-                android:layout_height="200dp"
-                android:layout_margin="2dp"
+                android:layout_height="@dimen/height_200"
+                android:layout_margin="@dimen/margin_2"
                 android:layout_weight="1"
                 android:backgroundTint="@color/dull_blue"
                 android:drawableTop="@drawable/ic_divide"
-                android:paddingTop="25dp"
+                android:paddingTop="@dimen/padding_25"
                 android:text="@string/division"
                 android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
         </LinearLayout>
 
 
@@ -112,7 +119,7 @@
             <Button
                 android:id="@+id/button_mul_by_11"
                 android:layout_width="0dp"
-                android:layout_height="200dp"
+                android:layout_height="@dimen/height_200"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/purple"
@@ -121,8 +128,8 @@
                 android:paddingTop="25dp"
                 android:text="@string/multiplication_by_11"
                 android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
 
             <Button
                 android:id="@+id/button_mul_by_25"
@@ -135,8 +142,8 @@
                 android:paddingTop="25dp"
                 android:text="@string/multiplication_by_25"
                 android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_16" />
         </LinearLayout>
 
         <ImageButton

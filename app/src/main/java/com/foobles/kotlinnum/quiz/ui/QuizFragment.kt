@@ -14,9 +14,7 @@ import com.foobles.kotlinnum.databinding.QuizFragmentBinding
 import com.foobles.kotlinnum.quiz.repo.*
 import com.foobles.kotlinnum.utils.*
 
-class QuizFragment : BaseFragment() {
-    private lateinit var binding: QuizFragmentBinding
-
+class QuizFragment : BaseFragment<QuizFragmentBinding>() {
     private var mQuestion: Question? = null
 
     var questionType = QUESTION_TYPE_SUM
@@ -62,7 +60,6 @@ class QuizFragment : BaseFragment() {
         return binding.rootLayout
     }
 
-    @SuppressLint("ApplySharedPref")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         preferences = context?.getSharedPreferences("prefs", 0)

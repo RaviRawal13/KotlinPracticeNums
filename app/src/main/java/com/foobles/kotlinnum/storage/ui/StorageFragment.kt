@@ -21,9 +21,8 @@ import com.foobles.kotlinnum.storage.vm.StorageViewModel
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.storage.StorageReference
 
-class StorageFragment : BaseFragment() {
+class StorageFragment : BaseFragment<StorageFragmentBinding>() {
     private val storageViewModel by viewModels<StorageViewModel>()
-    private lateinit var binding: StorageFragmentBinding
     private val loginViewModel by activityViewModels<LoginViewModel>()
 
 

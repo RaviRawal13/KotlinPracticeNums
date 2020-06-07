@@ -20,5 +20,10 @@
     <color name="golden">#fbde4a</color>
     <color name="aqua_green">#00dcff</color>
     <color name="bright_green">#afe31b</color>
+    <color name="ic_launcher_background">#FFB92F</color>
+    <color name="reddish">#e7595d</color>
+    <color name="sky_blue">#88a6db</color>
+    <color name="greyish">#cc8d66</color>
+    <color name="white_two">#E0F2F1</color>
 
 </resources>

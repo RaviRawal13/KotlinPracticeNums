@@ -20,8 +20,7 @@ import com.foobles.kotlinnum.storage.vm.StorageViewModel
 import com.foobles.kotlinnum.utils.ARG_LEVEL
 import com.google.firebase.storage.StorageReference
 
-class LevelFragment : BaseFragment() {
-    private lateinit var binding: LevelFragmentBinding
+class LevelFragment : BaseFragment<LevelFragmentBinding>() {
     private val loginViewModel by activityViewModels<LoginViewModel>()
 
     override fun onCreateView(

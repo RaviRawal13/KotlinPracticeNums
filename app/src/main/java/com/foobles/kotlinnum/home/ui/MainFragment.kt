@@ -4,7 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import com.foobles.kotlinnum.BaseFragment
 import com.foobles.kotlinnum.R
@@ -24,11 +25,12 @@ import java.lang.reflect.Type
 import java.nio.charset.Charset
 
 
-class MainFragment : BaseFragment() {
+class MainFragment : BaseFragment<MainFragmentBinding>() {
 
-    private lateinit var viewModel: MainViewModel
-    private lateinit var binding: MainFragmentBinding
-    var studyEntityArrayList: ArrayList<StudyEntity>? = null
+    private var studyEntityArrayList: ArrayList<StudyEntity>? = null
+
+    private val mainViewModel by viewModels<MainViewModel>()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -81,6 +83,20 @@ class MainFragment : BaseFragment() {
         }
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        mainViewModel.triviaData.observe(viewLifecycleOwner, Observer {
+            if (it.isNotBlank()) {
+                binding.triviaTextView.text = it
+                binding.triviaTextView.visibility = View.VISIBLE
+            } else {
+                binding.triviaTextView.visibility = View.INVISIBLE
+            }
+        })
+
+        mainViewModel.fetchRandomTrivia()
+    }
+
     private fun navigate(questionType: Int, text: CharSequence) {
         val studyEntity = studyEntityArrayList?.find { it.questionType == questionType }
         (activity as? NavigationActivity)?.findNavController(R.id.nav_host_fragment)
@@ -89,11 +105,6 @@ class MainFragment : BaseFragment() {
                 putString(ARG_QUESTION_TITLE, text.toString())
                 putInt(ARG_QUESTION_TYPE, questionType)
             })
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
     }
 
     private fun loadJSONFromAsset(): ArrayList<StudyEntity>? {

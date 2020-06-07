@@ -6,22 +6,24 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ProgressBar
 import android.widget.Toolbar
 import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 import com.foobles.kotlinnum.nav.NavigationActivity
 
-open class BaseFragment : Fragment() {
+open class BaseFragment<VB : ViewBinding> : Fragment() {
+    protected lateinit var binding: VB
 
     private var progressBar: ProgressBar? = null
 
     fun hideToolbar() {
-        (activity as NavigationActivity).toolbar.visibility = View.GONE
+        (activity as? NavigationActivity)?.toolbar?.visibility = View.GONE
     }
 
     fun showToolbar() {
-        (activity as NavigationActivity).toolbar.visibility = View.VISIBLE
+        (activity as? NavigationActivity)?.toolbar?.visibility = View.VISIBLE
     }
 
     fun showTitle(title: String) {
-        (activity as NavigationActivity).toolbar.title = title
+        (activity as? NavigationActivity)?.toolbar?.title = title
     }
 
     fun setProgressBar(bar: ProgressBar) {

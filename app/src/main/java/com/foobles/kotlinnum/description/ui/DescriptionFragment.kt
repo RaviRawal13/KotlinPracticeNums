@@ -11,10 +11,11 @@ import com.foobles.kotlinnum.databinding.DescriptionFragmentBinding
 import com.foobles.kotlinnum.entity.StudyEntity
 import com.foobles.kotlinnum.nav.NavigationActivity
 import com.foobles.kotlinnum.utils.ARG_STUDY_ENTITY
+import com.foobles.kotlinnum.utils.doExecution
+import timber.log.Timber
 
-class DescriptionFragment : BaseFragment() {
-    private lateinit var binding: DescriptionFragmentBinding
-    var studyEntity: StudyEntity? = null
+class DescriptionFragment : BaseFragment<DescriptionFragmentBinding>() {
+    private var studyEntity: StudyEntity? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,26 +51,20 @@ class DescriptionFragment : BaseFragment() {
     }
 
     private fun setTitle() {
-        val title = studyEntity?.name
-        if (title != null)
-            showTitle(title)
+        studyEntity?.name.doExecution {
+            showTitle(it)
+        }
     }
 
     override fun onPause() {
         super.onPause()
+        Timber.i("onPause")
         binding.dmPlayerWebView.onPause()
     }
 
     override fun onResume() {
         super.onResume()
+        Timber.i("onResume")
         binding.dmPlayerWebView.onResume()
     }
-
-//    override fun onActivityCreated(savedInstanceState: Bundle?) {
-//        super.onActivityCreated(savedInstanceState)
-//        if (studyEntity?.videoId.isNullOrBlank()) {
-//            val params = hashMapOf<String, String>()
-//            binding.dmPlayerWebView.load("x7u1ql8", params)
-//        }
-//    }
 }
